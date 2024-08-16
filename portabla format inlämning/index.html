@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Tagen från git f2 portabla format-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Filmportalen</title>
+</head>
+<body>
+ 
+  <header>
+   
+    <h2>Välkommen till Filmportalen</h2>
+    
+  </header>
+ 
+  <main>
+    
+  <!--Delar upp main i två delar, en där du söker efter fakta om film och en med video--> 
+
+    <div class="main">
+
+      <form class="sok-form">
+  
+        <label for="search">Sök efter film: </label>
+        <input name="search" id="search" placeholder="Sök efter filmens titel">
+        <button type="submit" class="btn btn-danger">Sök</button>
+  
+      </form>
+
+  
+  <!--Tagna från git f2 portabla format-->
+  <div id="spinners">
+    <div class="spinner-border text-muted"></div>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-border text-info"></div>
+    <div class="spinner-border text-warning"></div>
+    <div class="spinner-border text-danger"></div>
+    <div class="spinner-border text-secondary"></div>
+    <div class="spinner-border text-dark"></div>
+    <div class="spinner-border text-light"></div>
+  </div>  
+ 
+  <!--Här hamnar faktan om filmerna när du sökt-->
+  <div id="content">
+ 
+  </div>
+ 
+   </div>
+ 
+  <div class="aside">
+    <h2>Rekomenderade tjänster</h2><br>
+    <!--Länk in videos under varandra -->
+ 
+    <a href="https://www.netflix.com/se/Login" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Netflix_logo_%282%29.svg" alt="netflix logo">
+    </a>
+ 
+    <a href="https://www.hbomax.com/se/sv" target="_blank">
+    <img src="https://www.nme.com/wp-content/uploads/2021/09/logo-hbo-max-1-1392x884.jpg" alt="hbo logo">
+    </a>
+  
+  </div>
+ 
+</main>
+  <script src="script.js"></script>
+</body>
+</html>

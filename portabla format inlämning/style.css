@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+body{
+    font-size: 20px;
+    font-family: 'Radio Canada', sans-serif;
+}
+  header{
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/23/17/33/curtain-1275200_960_720.png");
+    background-size: auto;
+    border-bottom: 3px solid black;
+    box-sizing: border-box;
+    height: 200px;
+  }
+  header h2{
+    padding-top: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;
+  }
+   
+
+  main{
+    height: auto;
+    background-color: #333;
+    margin: 0%;
+    display: flex;
+  }
+  .aside{
+    padding-top: 20px;
+    color: crimson;
+    width: 40%;
+    text-align: center;
+  }
+  .aside h2{
+    font-weight: 370;
+  }
+  
+  .main{
+    padding: 20px;
+    width: 60%;
+  }
+  form{
+    color: crimson;
+    padding-top: 20px;
+    font-size: 140%;
+  }
+  .sok-form{
+    width: 100%;
+  }
+  form label{
+    font-size: 140%;
+  }
+  #content{
+    padding-top: 30px;
+  }
+  .aside img{
+    width: 100%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+
+  /*För mobil */
+  @media (max-width: 400px){
+body{
+  height: 514px;
+  background-color: #333;
+}
+header{
+  height: 100px;
+  text-align: center;
+}  
+
+main{
+  width: 100%;
+}
+header h2{
+  padding-top: 30px;
+  font-size: 18px;
+  text-align: center;
+  padding-left: 40px;
+  font-weight: 700;
+}
+main{
+  max-width: 100%;
+}
+.main{
+  width: 100%;
+}
+/*Gör så fomuläret där man söker efter film blir 100% av innehållet av sidan */
+.sok-form{  
+ width: 100%;
+text-align: left;
+font-size: small;
+
+}
+.aside{
+  display: none; /* Gömmer alla videos */
+}
+#spinners{
+  display: none; /* Gömmer spinners som annars syns innan sidan laddats klart */
+}
+/* Så fomuläret ser bättre ut */
+#search{
+  height: 50px;
+  width: 80%;
+  text-align: left;
+}
+
+  }
+
+
+  /* ipad */
+  @media screen and (min-width: 401px) and (max-width: 875px){
+
+/* Stylar tillbaka fomulär och delar upp mian i två delar som det ser ut vid datorskärm */
+.sok-form{
+  width: 100%;
+  text-align: left;
+  font-size: small;
+}
+
+.main{
+  width: 50%;
+}
+.aside{
+  width: 50%;
+}
+.aside h2{
+  font-size: 120%;
+}
+#vid1, #vid2, #vid3{
+  width: 90%;
+  height: 200px;
+}
+#spinners{
+  display: none;
+}
+
+  }
+  
